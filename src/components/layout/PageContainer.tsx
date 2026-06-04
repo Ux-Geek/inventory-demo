@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export default function PageContainer({ children, title, subtitle }: { children: React.ReactNode, title?: string, subtitle?: string }) {
+export default function PageContainer({ children, title, subtitle }: { children: React.ReactNode, title?: React.ReactNode, subtitle?: string }) {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 10 }}

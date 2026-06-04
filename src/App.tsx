@@ -8,6 +8,7 @@ import Scanner from "./components/Scanner";
 import CheckoutFlow from "./components/sales/CheckoutFlow";
 import DesktopSidebar from "./components/layout/DesktopSidebar";
 import DesktopHeader from "./components/layout/DesktopHeader";
+import MobileHeader from "./components/layout/MobileHeader";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function App() {
@@ -53,6 +54,9 @@ export default function App() {
         
         {/* Desktop Header */}
         <DesktopHeader className="hidden md:flex" />
+
+        {/* Mobile Header */}
+        <MobileHeader />
 
         {/* Main Content Area */}
         <main className="flex-1 overflow-y-auto w-full">
