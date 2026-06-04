@@ -9,6 +9,8 @@ import CheckoutFlow from "./components/sales/CheckoutFlow";
 import DesktopSidebar from "./components/layout/DesktopSidebar";
 import DesktopHeader from "./components/layout/DesktopHeader";
 import MobileHeader from "./components/layout/MobileHeader";
+import Customers from "./components/Customers";
+import Reports from "./components/Reports";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function App() {
@@ -105,8 +107,13 @@ export default function App() {
             </motion.div>
           )}
           {activeTab === "customers" && (
-            <motion.div key="customers" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="flex items-center justify-center min-h-screen">
-              <p className="text-muted text-body-large">Customers Module (Coming Soon)</p>
+            <motion.div key="customers" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Customers />
+            </motion.div>
+          )}
+          {activeTab === "analytics" && (
+            <motion.div key="analytics" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <Reports inventory={inventory} />
             </motion.div>
           )}
           {activeTab === "settings" && (
