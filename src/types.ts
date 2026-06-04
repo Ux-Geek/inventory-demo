@@ -6,6 +6,7 @@ export interface PhoneRecord {
   storage: string;
   ram?: string;
   condition: "New" | "UK Used" | "Refurbished" | "Open Box" | "Excellent" | "Good" | "Fair" | "Poor";
+  image?: string;
   specifications: string;
   estimatedValue: number;
   sellerPrice: number; // Selling Price
