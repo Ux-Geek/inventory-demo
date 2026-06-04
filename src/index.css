@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-header: "Outfit", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* Base style overrides to apply rounded fonts */
+body {
+  font-family: var(--font-body);
+  background-color: #f1f5f9;
+}

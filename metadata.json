@@ -1,0 +1,6 @@
+{
+  "name": "Phone Scanner & Inventory Manager",
+  "description": "Scan, snap and record your phone inventory using Gemini AI to automatically identify device hardware models and details.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
