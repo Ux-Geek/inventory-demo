@@ -10,7 +10,7 @@ export default function Analytics({ inventory }: AnalyticsProps) {
   const totalCount = inventory.length;
   const inStock = inventory.filter(item => item.status === "In Stock");
   const reserved = inventory.filter(item => item.status === "Reserved");
-  const sold = inventory.filter(item => item.status === "Sold");
+  const sold = inventory.filter(item => item.status === "Sold Out");
 
   // Sum valuations
   const estimatedCost = inventory.reduce((sum, item) => sum + (item.estimatedValue || 0), 0);
